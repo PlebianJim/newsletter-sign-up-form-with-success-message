@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    caret-color: transparent;
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+    gap: 5%;
+}
+
+.left-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1.25;
+    padding: 5%;
+}
+
+.left-container-h1 {
+    width: 100%;
+    text-align: center;
+    font-size: calc(3rem + 1vw);
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.left-container-p {
+    width: 100%;
+    text-align: center;
+    font-size: calc(0.2rem + 1vw);
+    color: hsl(234, 29%, 20%);
+}
+
+.left-container-list-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-container-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container-list-p {
+    width: 100%;
+    text-align: start;
+    padding-left: 5%;
+    color: hsl(234, 29%, 20%);
+    font-size: calc(0.1rem + 1vw);
+}
+
+.left-container-input {
+    width: 100%;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: calc(0.1rem + 1vw);
+}
+
+.left-container-input-form {
+    width: 100%;
+    padding: 3%;
+    border: 1px grey solid;
+    border-radius: 5px;
+    font-size: calc(0.1rem + 1vw);
+}
+
+.left-container-button {
+    width: 100%;
+    padding: 3%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: calc(0.1rem + 1vw);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.left-container-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.left-container-button:hover {
+    cursor: pointer;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-container-img {
+    display: flex;
+    height: 85%;
+    padding-right: 5%;
+}
