@@ -35,14 +35,16 @@
         </div>
       </div>
       <form class="left-container-input" action="POST">Email address
-        <input class="left-container-input-form" type="text" placeholder="email@company.com">
+        <input class="left-container-input-form" type="email" id="emailInput" placeholder="email@company.com" required>
       </form>
-      <button class="left-container-button">Subscribe to monthly newsletter</button>
+      <button type="button" class="left-container-button">Subscribe to monthly newsletter</button>
+      <p class="error-message" style="color: red; display: none;"></p>
     </div>
-    
+
     <div class="right-container">
       <img class="right-container-img" src="assets/images/illustration-sign-up-desktop.svg" alt="">
     </div>
+
   </section>
 
 </body>

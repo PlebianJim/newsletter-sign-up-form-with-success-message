@@ -36,14 +36,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex: 1.25;
+    flex: 1;
     padding: 5%;
 }
 
 .left-container-h1 {
     width: 100%;
     text-align: center;
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2rem + 1vw);
     font-weight: 700;
     color: hsl(234, 29%, 20%);
 }
@@ -124,6 +124,8 @@ body {
 
 .right-container-img {
     display: flex;
-    height: 85%;
+    height: 100%;
+    width: 95%;
     padding-right: 5%;
 }
+
