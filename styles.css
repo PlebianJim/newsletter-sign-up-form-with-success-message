@@ -129,6 +129,58 @@ body {
     padding-right: 5%;
 }
 
+/***** Success Page selectors *****/
+.section-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(45vw * 0.75);
+    width: 35%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0 5% 5%;
+}
+
+.img-success {
+    height: calc(15vw * 0.75);
+    width: 10%;
+}
+
+.h1-success {
+    font-size: calc(3vw + 2px);
+    font-weight: 800;
+    color: hsl(234, 29%, 20%);
+}
+
+.p-success {
+    font-size: calc(1vw + 1px);
+    color: hsl(234, 29%, 20%);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.button-success {
+    font-size: calc(1vw + 2px);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+
 /***** Media Queries *****/
 
 @media (min-width: 751px) {

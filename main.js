@@ -11,8 +11,9 @@ function validateEmail() {
     if (emailInput.validity.valid) {
         emailInput.setCustomValidity('');
         errorMessage.style.display = 'none';
-        // Perform additional actions if valid
-        // This will link to another page if it is valid
+        const enteredEmail = emailInput.value;
+        localStorage.setItem('enteredEmail', enteredEmail);
+        window.location.href = 'successPage.html';
         console.log('Email is valid');
     } else {
         emailInput.setCustomValidity('Please enter a valid email address');
@@ -23,3 +24,13 @@ function validateEmail() {
         console.log('Email is invalid');
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Store entered email address and then update DOM to include entered value
+    const enteredEmail = localStorage.getItem('enteredEmail');
+    const enteredEmailSpan = document.getElementById('entered-email-address');
+    if (enteredEmailSpan) {
+      enteredEmailSpan.textContent = enteredEmail;
+    }
+  });
+
